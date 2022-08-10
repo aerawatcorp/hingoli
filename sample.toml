@@ -1,9 +1,16 @@
-scenario = "Login flow testing"
-given = "User is anonymous and makes an attempt to login"
+testing = "Login flow"
+case = "User is anonymous and makes an attempt to login"
 
-[when]
+[api]
+url = ""
+method = "POST"
+
+[params]
 username = "username"
 password = "password"
 
-[then]
+[headers]
+x-some-header = "header value"
+
+[response]
 response = { contains = "Login successful" }
