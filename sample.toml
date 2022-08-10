@@ -5,6 +5,7 @@ case = "User is anonymous and makes an attempt to login"
 url = ""
 method = "POST"
 
+# Single request scenario
 [params]
 username = "username"
 password = "password"
@@ -14,3 +15,13 @@ x-some-header = "header value"
 
 [response]
 response = { contains = "Login successful" }
+
+## Multi request scenario example
+[request]
+expect = "a"
+
+[request]
+expect = "b"
+
+[request]
+expect = "c"
