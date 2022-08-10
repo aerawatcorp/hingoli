@@ -1,0 +1,9 @@
+scenario = "Login flow testing"
+given = "User is anonymous and makes an attempt to login"
+
+[when]
+username = "username"
+password = "password"
+
+[then]
+response = contains("Login successful")
