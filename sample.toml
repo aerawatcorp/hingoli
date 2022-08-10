@@ -6,4 +6,4 @@ username = "username"
 password = "password"
 
 [then]
-response = contains("Login successful")
+response = { contains = "Login successful" }
