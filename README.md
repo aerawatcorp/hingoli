@@ -9,3 +9,5 @@
 #### JSON(Status="true")
 
 ```
+
+also considering `toml` syntax
